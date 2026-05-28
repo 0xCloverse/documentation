@@ -255,7 +255,7 @@ tr:hover td { background: #fffafa; }
 
     <h2 data-i18n="mech_payout_title">Payout Calculation</h2>
     <p data-i18n="mech_payout_desc">Payouts are based on the ratio of bets in each pool:</p>
-    <div class="formula">
+    <div class="formula" data-i18n="mech_formula">
       Payout Ratio (UP Pool) = Total value of both pools &divide; Value of UP Pool<br>
       Payout Ratio (DOWN Pool) = Total value of both pools &divide; Value of DOWN Pool
     </div>
@@ -437,6 +437,7 @@ const translations = {
     mech_claim: "<strong>상금 수령:</strong> 라운드가 확정되고 온체인 데이터가 검증된 직후 보상을 즉시 수령할 수 있습니다.",
     mech_payout_title: "배당 계산",
     mech_payout_desc: "배당은 각 풀의 베팅 비율에 기반합니다:",
+    mech_formula: "배당률 (UP 풀) = 양쪽 풀의 총 가치 &divide; UP 풀의 가치<br>배당률 (DOWN 풀) = 양쪽 풀의 총 가치 &divide; DOWN 풀의 가치",
     mech_q1_title: "배당은 실제로 어떻게 계산되나요?",
     mech_q1_body: "본인 보상은 본인 쪽에 베팅한 사람 수와 반대편 인원 수에 따라 달라집니다. 승리한 쪽 인원이 적을수록 각 승자의 몫이 커집니다. 구체적인 예시로 살펴봅시다.",
     mech_q1_ex_label: "예시.",
@@ -564,6 +565,7 @@ const translations = {
     mech_claim: "<strong>奖金领取：</strong>回合确定并且链上数据验证后，用户可以立即领取奖励。",
     mech_payout_title: "支付计算",
     mech_payout_desc: "支付基于每个池中的投注比率：",
+    mech_formula: "支付比率 (UP 池) = 两个池的总价值 &divide; UP 池的价值<br>支付比率 (DOWN 池) = 两个池的总价值 &divide; DOWN 池的价值",
     mech_q1_title: "支付实际上是如何计算的？",
     mech_q1_body: "您的奖励取决于多少人下注在您这一方和另一方。获胜方人数越少，每个赢家分得越多。下面是一个具体的演练。",
     mech_q1_ex_label: "示例。",
@@ -691,6 +693,7 @@ const translations = {
     mech_claim: "<strong>賞金受取:</strong> ラウンドが確定しオンチェーンデータが検証された直後に報酬を受け取れます。",
     mech_payout_title: "配当計算",
     mech_payout_desc: "配当は各プールのベット比率に基づきます:",
+    mech_formula: "配当率 (UP プール) = 両プールの合計価値 &divide; UP プールの価値<br>配当率 (DOWN プール) = 両プールの合計価値 &divide; DOWN プールの価値",
     mech_q1_title: "配当は実際どのように計算されますか？",
     mech_q1_body: "報酬は、あなたの側に賭けた人数と相手側の人数に依存します。勝利側の人数が少ないほど、各勝者の取り分が大きくなります。具体的なウォークスルーで見てみましょう。",
     mech_q1_ex_label: "例。",
@@ -818,6 +821,7 @@ const translations = {
     mech_claim: "<strong>รางวัล:</strong> ผู้ใช้สามารถเรียกร้องรางวัลได้ทันทีหลังจากรอบสิ้นสุดและข้อมูลบนเชนได้รับการยืนยัน",
     mech_payout_title: "การคำนวณการจ่ายเงิน",
     mech_payout_desc: "การจ่ายเงินขึ้นอยู่กับอัตราส่วนการเดิมพันในแต่ละพูล:",
+    mech_formula: "อัตราจ่าย (UP พูล) = มูลค่ารวมของทั้งสองพูล &divide; มูลค่าของ UP พูล<br>อัตราจ่าย (DOWN พูล) = มูลค่ารวมของทั้งสองพูล &divide; มูลค่าของ DOWN พูล",
     mech_q1_title: "การจ่ายเงินคำนวณอย่างไรจริงๆ?",
     mech_q1_body: "รางวัลของคุณขึ้นอยู่กับจำนวนคนที่เดิมพันฝั่งคุณเทียบกับฝั่งตรงข้าม ยิ่งคนฝั่งที่ชนะน้อย แต่ละผู้ชนะก็ได้สัดส่วนมาก ลองดูตัวอย่างที่เป็นรูปธรรม",
     mech_q1_ex_label: "ตัวอย่าง.",
