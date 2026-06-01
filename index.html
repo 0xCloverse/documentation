@@ -96,16 +96,10 @@ tr:hover td { background: #fffafa; }
     <span>Cloverse</span>
   </div>
 
-  <div class="sidebar-section-label" data-i18n="sidebar_overview_label">OVERVIEW</div>
+  <div class="sidebar-section-label">UP &amp; DOWN</div>
   <div class="sidebar-item active" data-section="overview">
     <span class="icon">🎯</span>
     <span data-i18n="nav_overview">Overview</span>
-  </div>
-
-  <div class="sidebar-section-label" data-i18n="sidebar_guide_label">USER GUIDE</div>
-  <div class="sidebar-item" data-section="how-it-works">
-    <span class="icon">📋</span>
-    <span data-i18n="nav_how">How It Works</span>
   </div>
   <div class="sidebar-item" data-section="how-to-use">
     <span class="icon">▶️</span>
@@ -119,8 +113,6 @@ tr:hover td { background: #fffafa; }
     <span class="icon">⚖️</span>
     <span data-i18n="nav_outcomes">Outcomes &amp; Rules</span>
   </div>
-
-  <div class="sidebar-section-label" data-i18n="sidebar_infra_label">INFRASTRUCTURE</div>
   <div class="sidebar-item" data-section="oracle">
     <span class="icon">🔮</span>
     <span data-i18n="nav_oracle">Price Feeds (Oracle)</span>
@@ -161,12 +153,8 @@ tr:hover td { background: #fffafa; }
     <h1><span class="emoji">🎯</span> <span data-i18n="overview_title">UP &amp; DOWN</span></h1>
     <p class="subtitle" data-i18n="overview_subtitle">Predict the trend, raise your stakes, and win.</p>
     <p data-i18n="overview_p1">UP &amp; DOWN is a decentralized, high-fidelity prediction platform built on the Chiliz Chain. It allows you to capitalize on the price movements of CHZ in real time.</p>
-  </div>
 
-  <!-- ═══ How It Works ═══ -->
-  <div class="content section" id="how-it-works">
-    <h1><span class="emoji">📋</span> <span data-i18n="how_title">How It Works</span></h1>
-    <p class="subtitle" data-i18n="how_subtitle">A step-by-step summary of the prediction flow.</p>
+    <h2 data-i18n="how_title">Summary: How It Works</h2>
     <ol>
       <li data-i18n="how_step1">UP &amp; DOWN exclusively supports the <strong>CHZ/USD</strong> pair.</li>
       <li data-i18n="how_step2">Predict whether the CHZ price will be higher (<strong>UP</strong>) or lower (<strong>DOWN</strong>) than the Locked Price when the 10-minute round concludes.</li>
@@ -381,7 +369,7 @@ const translations = {
     overview_callout_title: "한 줄 요약:",
     overview_callout_body: "10분 후 CHZ 가격이 지금보다 오를 것 같으면 UP에 베팅, 내릴 것 같으면 DOWN에 베팅하세요. 맞히면 같은 방향에 베팅한 다른 사람들과 상금 풀을 나눠 가집니다.",
 
-    how_title: "작동 원리",
+    how_title: "요약: 작동 방식",
     how_subtitle: "예측 플로우를 단계별로 요약합니다.",
     how_step1: "UP &amp; DOWN은 <strong>CHZ/USD</strong> 페어만 지원합니다.",
     how_step2: "10분 라운드가 종료될 때 CHZ 가격이 잠금 가격(Locked Price)보다 높을지(<strong>UP</strong>) 낮을지(<strong>DOWN</strong>) 예측하세요.",
@@ -509,7 +497,7 @@ const translations = {
     overview_callout_title: "一句话说明：",
     overview_callout_body: "您觉得 10 分钟后 CHZ 价格会比现在高吗？下注 UP。觉得会更低？下注 DOWN。如果您猜对了，您将与同一方向的所有其他赢家分享奖池。",
 
-    how_title: "工作原理",
+    how_title: "概要：工作原理",
     how_subtitle: "预测流程的逐步概要。",
     how_step1: "UP &amp; DOWN 仅支持 <strong>CHZ/USD</strong> 交易对。",
     how_step2: "预测 10 分钟回合结束时，CHZ 价格将高于（<strong>UP</strong>）还是低于（<strong>DOWN</strong>）锁定价格。",
@@ -637,7 +625,7 @@ const translations = {
     overview_callout_title: "ひとことで言うと:",
     overview_callout_body: "10 分後に CHZ の価格が今より上がると思いますか？ UP に賭けましょう。下がると思いますか？ DOWN に賭けましょう。予測が当たれば、あなたと同じ方向に賭けた他のプレイヤーと賞金プールを分け合えます。",
 
-    how_title: "仕組み",
+    how_title: "概要：仕組み",
     how_subtitle: "予測フローのステップバイステップまとめ。",
     how_step1: "UP &amp; DOWN は <strong>CHZ/USD</strong> ペアのみをサポートしています。",
     how_step2: "10 分ラウンド終了時に CHZ 価格がロック価格より高くなるか（<strong>UP</strong>）、低くなるか（<strong>DOWN</strong>）を予測してください。",
@@ -765,7 +753,7 @@ const translations = {
     overview_callout_title: "สรุปสั้นๆ:",
     overview_callout_body: "คิดว่าราคา CHZ ใน 10 นาทีจะสูงกว่าตอนนี้? เดิมพัน UP คิดว่าจะต่ำลง? เดิมพัน DOWN หากคุณเดาถูก คุณจะแบ่งปันพูลรางวัลกับคนอื่นๆ ที่เดิมพันฝั่งเดียวกับคุณ",
 
-    how_title: "วิธีการทำงาน",
+    how_title: "สรุป: วิธีการทำงาน",
     how_subtitle: "สรุปขั้นตอนการทำนายทีละขั้น",
     how_step1: "UP &amp; DOWN รองรับเฉพาะคู่ <strong>CHZ/USD</strong> เท่านั้น",
     how_step2: "ทำนายว่าราคา CHZ จะสูงกว่า (<strong>UP</strong>) หรือต่ำกว่า (<strong>DOWN</strong>) ราคาล็อค เมื่อรอบ 10 นาทีสิ้นสุด",
