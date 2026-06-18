@@ -198,7 +198,7 @@ body.dark .step-image { border-color: #2a2a35; box-shadow: 0 4px 16px rgba(0,0,0
     <h2 data-i18n="how_title">Summary: How It Works</h2>
     <ol>
       <li data-i18n="how_step1">UP &amp; DOWN exclusively supports the <strong>CHZ/USD</strong> pair.</li>
-      <li data-i18n="how_step2">Predict whether the CHZ price will be higher (<strong>UP</strong>) or lower (<strong>DOWN</strong>) than the Locked Price when the 10-minute round concludes.</li>
+      <li data-i18n="how_step2">Predict whether the CHZ price will be higher (<strong>UP</strong>) or lower (<strong>DOWN</strong>) than the Locked Price when the 5-minute round concludes.</li>
       <li data-i18n="how_step3">Enter your desired amount of CHZ.</li>
       <li data-i18n="how_step4">Once your entry is submitted for a "LIVE" round, it <strong>cannot be edited, cancelled, or removed</strong>.</li>
       <li data-i18n="how_step5_intro">Win or lose:
@@ -210,21 +210,21 @@ body.dark .step-image { border-color: #2a2a35; box-shadow: 0 4px 16px rgba(0,0,0
     </ol>
 
     <h2 data-i18n="how_q1_title">What is the Locked Price?</h2>
-    <p data-i18n="how_q1_body">The Locked Price is the CHZ/USD price captured at the exact moment a round starts. It is the reference point your prediction is measured against. Think of it as the "starting line." Whatever you predict (UP or DOWN), you are predicting where CHZ will be relative to this number 10 minutes later.</p>
+    <p data-i18n="how_q1_body">The Locked Price is the CHZ/USD price captured at the exact moment a round starts. It is the reference point your prediction is measured against. Think of it as the "starting line." Whatever you predict (UP or DOWN), you are predicting where CHZ will be relative to this number 5 minutes later.</p>
     <div class="callout">
       <strong data-i18n="how_q1_ex_label">Example.</strong>
       <span data-i18n="how_q1_ex_body"> A new round opens at 14:00. At that exact moment, CHZ/USD is $0.0820. That becomes the Locked Price for this round. Ten minutes from now, if CHZ is above $0.0820 → UP wins. Below $0.0820 → DOWN wins.</span>
     </div>
 
     <h2 data-i18n="how_q2_title">What is the Closed Price?</h2>
-    <p data-i18n="how_q2_body">The Closed Price is the CHZ/USD price captured at the exact moment the round ends, 10 minutes after the Locked Price was set. This is the number that decides who wins.</p>
+    <p data-i18n="how_q2_body">The Closed Price is the CHZ/USD price captured at the exact moment the round ends, 5 minutes after the Locked Price was set. This is the number that decides who wins.</p>
     <div class="callout">
       <strong data-i18n="how_q2_ex_label">Example.</strong>
-      <span data-i18n="how_q2_ex_body"> Continuing from above: the round started at 14:00 with a Locked Price of $0.0820. At 14:10, CHZ/USD is $0.0834. The Closed Price ($0.0834) is higher than the Locked Price ($0.0820), so UP wins this round.</span>
+      <span data-i18n="how_q2_ex_body"> Continuing from above: the round started at 14:00 with a Locked Price of $0.0820. At 14:05, CHZ/USD is $0.0834. The Closed Price ($0.0834) is higher than the Locked Price ($0.0820), so UP wins this round.</span>
     </div>
 
     <h2 data-i18n="how_q3_title">What is a "Round"?</h2>
-    <p data-i18n="how_q3_body">A round is one full 10-minute prediction cycle. Every round has three phases:</p>
+    <p data-i18n="how_q3_body">A round is one full 5-minute prediction cycle. Every round has three phases:</p>
     <ol>
       <li data-i18n="how_q3_p1"><strong>Open (Betting):</strong> Players choose UP or DOWN and submit their entries.</li>
       <li data-i18n="how_q3_p2"><strong>Live (Locked):</strong> Entries are locked in, the Locked Price is set, and the price moves freely on the market.</li>
@@ -244,7 +244,7 @@ body.dark .step-image { border-color: #2a2a35; box-shadow: 0 4px 16px rgba(0,0,0
     <p class="subtitle" data-i18n="mech_subtitle">Technical details on rounds, fees, and payout calculations.</p>
     <ul>
       <li data-i18n="mech_chain"><strong>Blockchain:</strong> Powered by Chiliz Chain (Mainnet).</li>
-      <li data-i18n="mech_round"><strong>Round Frequency:</strong> Rolling rounds occur every 10 minutes.</li>
+      <li data-i18n="mech_round"><strong>Round Frequency:</strong> Rolling rounds occur every 5 minutes.</li>
       <li data-i18n="mech_minentry"><strong>Minimum Entry:</strong> 30 CHZ per round (no upper limit).</li>
       <li data-i18n="mech_fee"><strong>Platform Fee:</strong> A small portion of the total prize pool is allocated to $FAN. These funds are dedicated to continuous platform development and are also subject to buyback and burn.</li>
       <li data-i18n="mech_claim"><strong>Winnings:</strong> Users can claim their rewards immediately after a round is finalized and the on-chain data is verified.</li>
@@ -264,8 +264,8 @@ body.dark .step-image { border-color: #2a2a35; box-shadow: 0 4px 16px rgba(0,0,0
       <span data-i18n="mech_q1_ex_body"> A round closes with UP pool 1,000 CHZ and DOWN pool 2,000 CHZ, combined 3,000 CHZ. You bet 30 CHZ on UP. Payout Ratio (UP) = 3,000 ÷ 1,000 = 3x. UP wins → your gross reward = 30 × 3 = 90 CHZ, minus a small platform fee. Because UP was the smaller side, each UP winner got a bigger multiplier. <strong>Smaller side = bigger reward per CHZ.</strong></span>
     </div>
 
-    <h2 data-i18n="mech_q3_title">What does "rolling rounds every 10 minutes" mean?</h2>
-    <p data-i18n="mech_q3_body">A new round opens every 10 minutes, like clockwork. You do not have to wait for one round to fully finish before joining the next. Rounds overlap, so there is always one accepting entries. If you do not feel confident about the current round, you can skip it and the next opportunity is only minutes away.</p>
+    <h2 data-i18n="mech_q3_title">What does "rolling rounds every 5 minutes" mean?</h2>
+    <p data-i18n="mech_q3_body">A new round opens every 5 minutes, like clockwork. You do not have to wait for one round to fully finish before joining the next. Rounds overlap, so there is always one accepting entries. If you do not feel confident about the current round, you can skip it and the next opportunity is only minutes away.</p>
   </div>
 
   <!-- ═══ Outcomes & Special Rules ═══ -->
@@ -376,12 +376,12 @@ const translations = {
     overview_subtitle: "预测趋势，提高赌注，赢取奖励。",
     overview_p1: "UP &amp; DOWN 是建立在 Chiliz Chain 上的去中心化高保真预测平台。它允许您实时利用 CHZ 的价格变动。",
     overview_callout_title: "一句话说明：",
-    overview_callout_body: "您觉得 10 分钟后 CHZ 价格会比现在高吗？下注 UP。觉得会更低？下注 DOWN。如果您猜对了，您将与同一方向的所有其他赢家分享奖池。",
+    overview_callout_body: "您觉得 5 分钟后 CHZ 价格会比现在高吗？下注 UP。觉得会更低？下注 DOWN。如果您猜对了，您将与同一方向的所有其他赢家分享奖池。",
 
     how_title: "概要：工作原理",
     how_subtitle: "预测流程的逐步概要。",
     how_step1: "UP &amp; DOWN 仅支持 <strong>CHZ/USD</strong> 交易对。",
-    how_step2: "预测 10 分钟回合结束时，CHZ 价格将高于（<strong>UP</strong>）还是低于（<strong>DOWN</strong>）锁定价格。",
+    how_step2: "预测 5 分钟回合结束时，CHZ 价格将高于（<strong>UP</strong>）还是低于（<strong>DOWN</strong>）锁定价格。",
     how_step3: "输入您想要的 CHZ 数量。",
     how_step4: "一旦您的参与提交到\"LIVE\"回合，<strong>将无法编辑、取消或撤回</strong>。",
     how_step5_intro: "输赢判定：",
@@ -389,17 +389,17 @@ const translations = {
     how_step5_down: "<strong>DOWN 获胜：</strong>回合结束时收盘价 &lt; 锁定价格。",
 
     how_q1_title: "什么是锁定价格 (Locked Price)？",
-    how_q1_body: "锁定价格是回合开始的精确时刻所记录的 CHZ/USD 价格。它是衡量您预测的参考点。把它想成\"起跑线\"。无论您选择 UP 还是 DOWN，您都在预测 10 分钟后 CHZ 价格相对于这个数字的位置。",
+    how_q1_body: "锁定价格是回合开始的精确时刻所记录的 CHZ/USD 价格。它是衡量您预测的参考点。把它想成\"起跑线\"。无论您选择 UP 还是 DOWN，您都在预测 5 分钟后 CHZ 价格相对于这个数字的位置。",
     how_q1_ex_label: "示例。",
-    how_q1_ex_body: " 14:00 一个新回合开始。此时 CHZ/USD 是 $0.0820，这就是本回合的锁定价格。10 分钟后如果 CHZ 高于 $0.0820 → UP 获胜，低于 $0.0820 → DOWN 获胜。",
+    how_q1_ex_body: " 14:00 一个新回合开始。此时 CHZ/USD 是 $0.0820，这就是本回合的锁定价格。5 分钟后如果 CHZ 高于 $0.0820 → UP 获胜，低于 $0.0820 → DOWN 获胜。",
 
     how_q2_title: "什么是收盘价 (Closed Price)？",
-    how_q2_body: "收盘价是回合结束（锁定价格设定后 10 分钟）的精确时刻所记录的 CHZ/USD 价格。这是决定输赢的数字。",
+    how_q2_body: "收盘价是回合结束（锁定价格设定后 5 分钟）的精确时刻所记录的 CHZ/USD 价格。这是决定输赢的数字。",
     how_q2_ex_label: "示例。",
-    how_q2_ex_body: " 接着上面的例子，回合在 14:00 以 $0.0820 的锁定价格开始。14:10 时 CHZ/USD 是 $0.0834。收盘价（$0.0834）高于锁定价格（$0.0820），所以本回合 UP 获胜。",
+    how_q2_ex_body: " 接着上面的例子，回合在 14:00 以 $0.0820 的锁定价格开始。14:05 时 CHZ/USD 是 $0.0834。收盘价（$0.0834）高于锁定价格（$0.0820），所以本回合 UP 获胜。",
 
     how_q3_title: "什么是\"回合\" (Round)？",
-    how_q3_body: "一个回合是一个完整的 10 分钟预测周期。每个回合都有三个阶段：",
+    how_q3_body: "一个回合是一个完整的 5 分钟预测周期。每个回合都有三个阶段：",
     how_q3_p1: "<strong>Open（下注阶段）：</strong>玩家选择 UP 或 DOWN 并提交参与。",
     how_q3_p2: "<strong>Live（锁定阶段）：</strong>参与被锁定，锁定价格被设定，价格在市场上自由波动。",
     how_q3_p3: "<strong>Close（结算阶段）：</strong>收盘价被记录，确定获胜方，奖励可以领取。",
@@ -428,7 +428,7 @@ const translations = {
     mech_title: "机制与费用",
     mech_subtitle: "关于回合、费用和支付计算的技术细节。",
     mech_chain: "<strong>区块链：</strong>基于 Chiliz Chain（主网）。",
-    mech_round: "<strong>回合频率：</strong>每 10 分钟进行滚动回合。",
+    mech_round: "<strong>回合频率：</strong>每 5 分钟进行滚动回合。",
     mech_minentry: "<strong>最低参与：</strong>每回合 30 CHZ（无上限）。",
     mech_fee: "<strong>平台费用：</strong>奖池总额的一小部分分配给 $FAN。这些资金用于持续的平台开发，也适用于回购和销毁。",
     mech_claim: "<strong>奖金领取：</strong>回合确定并且链上数据验证后，用户可以立即领取奖励。",
@@ -441,8 +441,8 @@ const translations = {
     mech_q1_ex_body: " 一个回合结束时 UP 池 1,000 CHZ，DOWN 池 2,000 CHZ，合计 3,000 CHZ。您在 UP 上下注 30 CHZ。UP 支付比率 = 3,000 ÷ 1,000 = 3 倍。UP 获胜 → 您的总奖励 = 30 × 3 = 90 CHZ，减去少量平台费。因为 UP 是较小的一方，所以每个 UP 赢家获得更大的倍数。<strong>较小方 = 每 CHZ 奖励更大。</strong>",
     mech_q2_title: "\"回购和销毁\"是什么意思？",
     mech_q2_body: "平台费用的一部分用于<strong>在公开市场上购买 $FAN 代币</strong>，然后永久销毁（\"burn\"）。销毁随着时间减少 $FAN 的总供应量，从长远来看可以支持其价值。简而言之：您每玩一个回合，都会为让 $FAN 更稀缺做出小小贡献。",
-    mech_q3_title: "\"每 10 分钟滚动回合\"是什么意思？",
-    mech_q3_body: "新回合像时钟一样每 10 分钟开启。您不必等一个回合完全结束才能加入下一个，回合是重叠的，所以总有一个在接受参与。如果您对当前回合没有把握，可以跳过，下一个机会只需几分钟。",
+    mech_q3_title: "\"每 5 分钟滚动回合\"是什么意思？",
+    mech_q3_body: "新回合像时钟一样每 5 分钟开启。您不必等一个回合完全结束才能加入下一个，回合是重叠的，所以总有一个在接受参与。如果您对当前回合没有把握，可以跳过，下一个机会只需几分钟。",
 
     out_title: "结果与特殊规则",
     out_subtitle: "回合结束后会发生什么。",
@@ -504,12 +504,12 @@ const translations = {
     overview_subtitle: "トレンドを予測し、ステークを上げ、勝利を掴もう。",
     overview_p1: "UP &amp; DOWN は Chiliz Chain 上に構築された分散型・高精度の予測プラットフォームです。CHZ の価格変動をリアルタイムで活用できます。",
     overview_callout_title: "ひとことで言うと:",
-    overview_callout_body: "10 分後に CHZ の価格が今より上がると思いますか？ UP に賭けましょう。下がると思いますか？ DOWN に賭けましょう。予測が当たれば、あなたと同じ方向に賭けた他のプレイヤーと賞金プールを分け合えます。",
+    overview_callout_body: "5 分後に CHZ の価格が今より上がると思いますか？ UP に賭けましょう。下がると思いますか？ DOWN に賭けましょう。予測が当たれば、あなたと同じ方向に賭けた他のプレイヤーと賞金プールを分け合えます。",
 
     how_title: "概要：仕組み",
     how_subtitle: "予測フローのステップバイステップまとめ。",
     how_step1: "UP &amp; DOWN は <strong>CHZ/USD</strong> ペアのみをサポートしています。",
-    how_step2: "10 分ラウンド終了時に CHZ 価格がロック価格より高くなるか（<strong>UP</strong>）、低くなるか（<strong>DOWN</strong>）を予測してください。",
+    how_step2: "5 分ラウンド終了時に CHZ 価格がロック価格より高くなるか（<strong>UP</strong>）、低くなるか（<strong>DOWN</strong>）を予測してください。",
     how_step3: "希望する CHZ の数量を入力してください。",
     how_step4: "\"LIVE\" ラウンドにエントリーが送信されると、<strong>編集・キャンセル・削除はできません</strong>。",
     how_step5_intro: "勝敗の判定:",
@@ -517,17 +517,17 @@ const translations = {
     how_step5_down: "<strong>DOWN 勝利:</strong> ラウンド終了時の終値 &lt; ロック価格。",
 
     how_q1_title: "ロック価格（Locked Price）とは？",
-    how_q1_body: "ロック価格とは、ラウンド開始の正確な瞬間に記録された CHZ/USD 価格のことです。あなたの予測が比較される基準点で、「スタートライン」と考えてください。UP でも DOWN でも、あなたは 10 分後の CHZ 価格がこの数字に対してどこにあるかを予測することになります。",
+    how_q1_body: "ロック価格とは、ラウンド開始の正確な瞬間に記録された CHZ/USD 価格のことです。あなたの予測が比較される基準点で、「スタートライン」と考えてください。UP でも DOWN でも、あなたは 5 分後の CHZ 価格がこの数字に対してどこにあるかを予測することになります。",
     how_q1_ex_label: "例。",
-    how_q1_ex_body: " 14:00 に新しいラウンドが始まります。その瞬間 CHZ/USD が $0.0820 であれば、これがこのラウンドのロック価格になります。10 分後、CHZ が $0.0820 を上回れば → UP 勝利、下回れば → DOWN 勝利です。",
+    how_q1_ex_body: " 14:00 に新しいラウンドが始まります。その瞬間 CHZ/USD が $0.0820 であれば、これがこのラウンドのロック価格になります。5 分後、CHZ が $0.0820 を上回れば → UP 勝利、下回れば → DOWN 勝利です。",
 
     how_q2_title: "終値（Closed Price）とは？",
-    how_q2_body: "終値とは、ラウンド終了の瞬間（ロック価格設定の 10 分後）に記録される CHZ/USD 価格です。勝者を決める数字です。",
+    how_q2_body: "終値とは、ラウンド終了の瞬間（ロック価格設定の 5 分後）に記録される CHZ/USD 価格です。勝者を決める数字です。",
     how_q2_ex_label: "例。",
-    how_q2_ex_body: " 上の例の続き。14:00 にロック価格 $0.0820 でラウンドが始まり、14:10 に CHZ/USD が $0.0834 になりました。終値（$0.0834）がロック価格（$0.0820）より高いので、このラウンドは UP 勝利です。",
+    how_q2_ex_body: " 上の例の続き。14:00 にロック価格 $0.0820 でラウンドが始まり、14:05 に CHZ/USD が $0.0834 になりました。終値（$0.0834）がロック価格（$0.0820）より高いので、このラウンドは UP 勝利です。",
 
     how_q3_title: "「ラウンド」とは？",
-    how_q3_body: "1 ラウンドとは、10 分間の予測サイクル全体を指します。各ラウンドには 3 つのフェーズがあります:",
+    how_q3_body: "1 ラウンドとは、5 分間の予測サイクル全体を指します。各ラウンドには 3 つのフェーズがあります:",
     how_q3_p1: "<strong>Open（ベッティング）:</strong> プレイヤーが UP か DOWN を選んでエントリーを提出します。",
     how_q3_p2: "<strong>Live（ロック）:</strong> エントリーがロックされ、ロック価格が設定され、価格は市場で自由に動きます。",
     how_q3_p3: "<strong>Close（精算）:</strong> 終値が記録され、勝利側が決定し、報酬が請求可能になります。",
@@ -556,7 +556,7 @@ const translations = {
     mech_title: "メカニズムと手数料",
     mech_subtitle: "ラウンド、手数料、配当計算の技術的詳細。",
     mech_chain: "<strong>ブロックチェーン:</strong> Chiliz Chain（メインネット）で稼働。",
-    mech_round: "<strong>ラウンド頻度:</strong> 10 分ごとにローリングラウンドが実施されます。",
+    mech_round: "<strong>ラウンド頻度:</strong> 5 分ごとにローリングラウンドが実施されます。",
     mech_minentry: "<strong>最低エントリー:</strong> 1 ラウンドあたり 30 CHZ（上限なし）。",
     mech_fee: "<strong>プラットフォーム手数料:</strong> 賞金プール総額の一部が $FAN に配分されます。この資金は継続的なプラットフォーム開発に使用され、バイバック＆バーンの対象でもあります。",
     mech_claim: "<strong>賞金受取:</strong> ラウンドが確定しオンチェーンデータが検証された直後に報酬を受け取れます。",
@@ -569,8 +569,8 @@ const translations = {
     mech_q1_ex_body: " UP プール 1,000 CHZ、DOWN プール 2,000 CHZ、合計 3,000 CHZ でラウンドが終了します。あなたは UP に 30 CHZ を賭けました。UP 配当率 = 3,000 ÷ 1,000 = 3 倍。UP 勝利 → 総報酬 = 30 × 3 = 90 CHZ、ここから少額のプラットフォーム手数料を差し引きます。UP が少数派だったので、各 UP 勝者は大きい倍率を得ました。<strong>少数派 = CHZ あたりの報酬が大きい。</strong>",
     mech_q2_title: "「バイバック＆バーン」とは何ですか？",
     mech_q2_body: "プラットフォーム手数料の一部は、<strong>市場で $FAN トークンを買い戻し</strong>、その後永久に破壊（バーン）するために使われます。バーンは時間とともに $FAN の総供給量を減らし、長期的価値を支える可能性があります。要するに、ラウンドをプレイするたびに、$FAN をより希少にすることに少しずつ貢献していることになります。",
-    mech_q3_title: "「10 分ごとのローリングラウンド」とは？",
-    mech_q3_body: "新しいラウンドが時計のように 10 分ごとに開きます。次のラウンドに参加するのに、前のラウンドが完全に終わるのを待つ必要はありません。ラウンドは重なって進行するので、常にエントリーを受け付けているラウンドがあります。現在のラウンドに自信がなければ、スキップしても次のチャンスは数分後にきます。",
+    mech_q3_title: "「5 分ごとのローリングラウンド」とは？",
+    mech_q3_body: "新しいラウンドが時計のように 5 分ごとに開きます。次のラウンドに参加するのに、前のラウンドが完全に終わるのを待つ必要はありません。ラウンドは重なって進行するので、常にエントリーを受け付けているラウンドがあります。現在のラウンドに自信がなければ、スキップしても次のチャンスは数分後にきます。",
 
     out_title: "結果と特別ルール",
     out_subtitle: "ラウンド終了後に何が起こるか。",
@@ -632,12 +632,12 @@ const translations = {
     overview_subtitle: "ทำนายแนวโน้ม เพิ่มเดิมพัน และชนะ",
     overview_p1: "UP &amp; DOWN เป็นแพลตฟอร์มทำนายแบบกระจายศูนย์ที่มีความแม่นยำสูง สร้างบน Chiliz Chain ช่วยให้คุณใช้ประโยชน์จากการเคลื่อนไหวของราคา CHZ แบบเรียลไทม์",
     overview_callout_title: "สรุปสั้นๆ:",
-    overview_callout_body: "คิดว่าราคา CHZ ใน 10 นาทีจะสูงกว่าตอนนี้? เดิมพัน UP คิดว่าจะต่ำลง? เดิมพัน DOWN หากคุณเดาถูก คุณจะแบ่งปันพูลรางวัลกับคนอื่นๆ ที่เดิมพันฝั่งเดียวกับคุณ",
+    overview_callout_body: "คิดว่าราคา CHZ ใน 5 นาทีจะสูงกว่าตอนนี้? เดิมพัน UP คิดว่าจะต่ำลง? เดิมพัน DOWN หากคุณเดาถูก คุณจะแบ่งปันพูลรางวัลกับคนอื่นๆ ที่เดิมพันฝั่งเดียวกับคุณ",
 
     how_title: "สรุป: วิธีการทำงาน",
     how_subtitle: "สรุปขั้นตอนการทำนายทีละขั้น",
     how_step1: "UP &amp; DOWN รองรับเฉพาะคู่ <strong>CHZ/USD</strong> เท่านั้น",
-    how_step2: "ทำนายว่าราคา CHZ จะสูงกว่า (<strong>UP</strong>) หรือต่ำกว่า (<strong>DOWN</strong>) ราคาล็อค เมื่อรอบ 10 นาทีสิ้นสุด",
+    how_step2: "ทำนายว่าราคา CHZ จะสูงกว่า (<strong>UP</strong>) หรือต่ำกว่า (<strong>DOWN</strong>) ราคาล็อค เมื่อรอบ 5 นาทีสิ้นสุด",
     how_step3: "ป้อนจำนวน CHZ ที่คุณต้องการ",
     how_step4: "เมื่อส่งรายการเข้าร่วมรอบ \"LIVE\" แล้ว <strong>ไม่สามารถแก้ไข ยกเลิก หรือลบได้</strong>",
     how_step5_intro: "ชนะหรือแพ้:",
@@ -645,17 +645,17 @@ const translations = {
     how_step5_down: "<strong>DOWN ชนะ:</strong> หากราคาปิด &lt; ราคาล็อค เมื่อสิ้นสุดรอบ",
 
     how_q1_title: "ราคาล็อค (Locked Price) คืออะไร?",
-    how_q1_body: "ราคาล็อคคือราคา CHZ/USD ที่บันทึกในขณะที่รอบเริ่มต้นพอดี เป็นจุดอ้างอิงที่ใช้วัดการทำนายของคุณ คิดว่าเป็น \"เส้นเริ่มต้น\" ไม่ว่าคุณจะทำนาย UP หรือ DOWN คุณกำลังทำนายว่า 10 นาทีต่อมา CHZ จะอยู่ตำแหน่งใดเมื่อเทียบกับตัวเลขนี้",
+    how_q1_body: "ราคาล็อคคือราคา CHZ/USD ที่บันทึกในขณะที่รอบเริ่มต้นพอดี เป็นจุดอ้างอิงที่ใช้วัดการทำนายของคุณ คิดว่าเป็น \"เส้นเริ่มต้น\" ไม่ว่าคุณจะทำนาย UP หรือ DOWN คุณกำลังทำนายว่า 5 นาทีต่อมา CHZ จะอยู่ตำแหน่งใดเมื่อเทียบกับตัวเลขนี้",
     how_q1_ex_label: "ตัวอย่าง.",
-    how_q1_ex_body: " รอบใหม่เริ่ม 14:00 ขณะนั้น CHZ/USD อยู่ที่ $0.0820 นั่นกลายเป็นราคาล็อคสำหรับรอบนี้ 10 นาทีต่อมา ถ้า CHZ สูงกว่า $0.0820 → UP ชนะ ต่ำกว่า → DOWN ชนะ",
+    how_q1_ex_body: " รอบใหม่เริ่ม 14:00 ขณะนั้น CHZ/USD อยู่ที่ $0.0820 นั่นกลายเป็นราคาล็อคสำหรับรอบนี้ 5 นาทีต่อมา ถ้า CHZ สูงกว่า $0.0820 → UP ชนะ ต่ำกว่า → DOWN ชนะ",
 
     how_q2_title: "ราคาปิด (Closed Price) คืออะไร?",
-    how_q2_body: "ราคาปิดคือราคา CHZ/USD ที่บันทึกในขณะที่รอบสิ้นสุดพอดี 10 นาทีหลังจากตั้งราคาล็อค นี่คือตัวเลขที่ตัดสินว่าใครชนะ",
+    how_q2_body: "ราคาปิดคือราคา CHZ/USD ที่บันทึกในขณะที่รอบสิ้นสุดพอดี 5 นาทีหลังจากตั้งราคาล็อค นี่คือตัวเลขที่ตัดสินว่าใครชนะ",
     how_q2_ex_label: "ตัวอย่าง.",
-    how_q2_ex_body: " ต่อจากด้านบน รอบเริ่ม 14:00 ด้วยราคาล็อค $0.0820 เวลา 14:10 CHZ/USD อยู่ที่ $0.0834 ราคาปิด ($0.0834) สูงกว่าราคาล็อค ($0.0820) ดังนั้น UP ชนะรอบนี้",
+    how_q2_ex_body: " ต่อจากด้านบน รอบเริ่ม 14:00 ด้วยราคาล็อค $0.0820 เวลา 14:05 CHZ/USD อยู่ที่ $0.0834 ราคาปิด ($0.0834) สูงกว่าราคาล็อค ($0.0820) ดังนั้น UP ชนะรอบนี้",
 
     how_q3_title: "\"รอบ\" (Round) คืออะไร?",
-    how_q3_body: "หนึ่งรอบคือหนึ่งวงจรการทำนายเต็ม 10 นาที ทุกรอบมีสามเฟส:",
+    how_q3_body: "หนึ่งรอบคือหนึ่งวงจรการทำนายเต็ม 5 นาที ทุกรอบมีสามเฟส:",
     how_q3_p1: "<strong>Open (เดิมพัน):</strong> ผู้เล่นเลือก UP หรือ DOWN และส่งการเข้าร่วม",
     how_q3_p2: "<strong>Live (ล็อค):</strong> การเข้าร่วมถูกล็อค ตั้งราคาล็อค ราคาเคลื่อนไหวอย่างอิสระในตลาด",
     how_q3_p3: "<strong>Close (ชำระ):</strong> บันทึกราคาปิด ตัดสินฝั่งที่ชนะ และเปิดให้รับรางวัล",
@@ -684,7 +684,7 @@ const translations = {
     mech_title: "กลไกและค่าธรรมเนียม",
     mech_subtitle: "รายละเอียดทางเทคนิคเกี่ยวกับรอบ ค่าธรรมเนียม และการคำนวณการจ่ายเงิน",
     mech_chain: "<strong>บล็อกเชน:</strong> ขับเคลื่อนโดย Chiliz Chain (Mainnet)",
-    mech_round: "<strong>ความถี่ของรอบ:</strong> รอบหมุนเวียนทุก 10 นาที",
+    mech_round: "<strong>ความถี่ของรอบ:</strong> รอบหมุนเวียนทุก 5 นาที",
     mech_minentry: "<strong>เข้าร่วมขั้นต่ำ:</strong> 30 CHZ ต่อรอบ (ไม่มีขีดจำกัดสูงสุด)",
     mech_fee: "<strong>ค่าธรรมเนียมแพลตฟอร์ม:</strong> ส่วนเล็กน้อยของพูลรางวัลทั้งหมดจะถูกจัดสรรให้ $FAN เงินทุนเหล่านี้มุ่งเน้นการพัฒนาแพลตฟอร์มอย่างต่อเนื่องและอยู่ภายใต้การซื้อคืนและเผา",
     mech_claim: "<strong>รางวัล:</strong> ผู้ใช้สามารถเรียกร้องรางวัลได้ทันทีหลังจากรอบสิ้นสุดและข้อมูลบนเชนได้รับการยืนยัน",
@@ -697,8 +697,8 @@ const translations = {
     mech_q1_ex_body: " รอบจบโดย UP พูล 1,000 CHZ DOWN พูล 2,000 CHZ รวม 3,000 CHZ คุณเดิมพัน 30 CHZ ฝั่ง UP อัตราจ่าย UP = 3,000 ÷ 1,000 = 3 เท่า UP ชนะ → รางวัลรวม = 30 × 3 = 90 CHZ หักค่าธรรมเนียมแพลตฟอร์มเล็กน้อย เนื่องจาก UP เป็นฝั่งเล็กกว่า ผู้ชนะ UP แต่ละคนจึงได้ตัวคูณใหญ่กว่า <strong>ฝั่งเล็ก = รางวัลต่อ CHZ มากกว่า</strong>",
     mech_q2_title: "\"การซื้อคืนและเผา (Buyback and Burn)\" หมายความว่าอย่างไร?",
     mech_q2_body: "ส่วนหนึ่งของค่าธรรมเนียมแพลตฟอร์มใช้เพื่อ<strong>ซื้อโทเค็น $FAN ในตลาดเปิด</strong> แล้วทำลาย (\"burn\") อย่างถาวร การเผาช่วยลดอุปทานรวมของ $FAN ลงตามเวลา ซึ่งสามารถสนับสนุนมูลค่าระยะยาวได้ สรุปคือ ทุกรอบที่คุณเล่นมีส่วนเล็กน้อยช่วยให้ $FAN หายากขึ้น",
-    mech_q3_title: "\"รอบหมุนเวียนทุก 10 นาที\" หมายความว่าอย่างไร?",
-    mech_q3_body: "รอบใหม่เปิดทุก 10 นาทีเหมือนนาฬิกา คุณไม่ต้องรอให้รอบหนึ่งจบสมบูรณ์ก่อนเข้าร่วมรอบถัดไป รอบเหลื่อมกันอยู่ จึงมีรอบรับการเข้าร่วมเสมอ ถ้าคุณไม่มั่นใจในรอบปัจจุบัน ก็ข้ามได้ โอกาสถัดไปอยู่อีกไม่กี่นาที",
+    mech_q3_title: "\"รอบหมุนเวียนทุก 5 นาที\" หมายความว่าอย่างไร?",
+    mech_q3_body: "รอบใหม่เปิดทุก 5 นาทีเหมือนนาฬิกา คุณไม่ต้องรอให้รอบหนึ่งจบสมบูรณ์ก่อนเข้าร่วมรอบถัดไป รอบเหลื่อมกันอยู่ จึงมีรอบรับการเข้าร่วมเสมอ ถ้าคุณไม่มั่นใจในรอบปัจจุบัน ก็ข้ามได้ โอกาสถัดไปอยู่อีกไม่กี่นาที",
 
     out_title: "ผลลัพธ์และกฎพิเศษ",
     out_subtitle: "เกิดอะไรขึ้นหลังจากรอบสิ้นสุด",
@@ -760,12 +760,12 @@ const translations = {
     overview_subtitle: "Prediksi tren, tingkatkan taruhan Anda, dan menang.",
     overview_p1: "UP &amp; DOWN adalah platform prediksi terdesentralisasi berfidelitas tinggi yang dibangun di Chiliz Chain. Platform ini memungkinkan Anda memanfaatkan pergerakan harga CHZ secara real-time.",
     overview_callout_title: "Singkatnya:",
-    overview_callout_body: "Menurut Anda harga CHZ 10 menit lagi akan lebih tinggi dari sekarang? Taruhan UP. Akan lebih rendah? Taruhan DOWN. Jika tebakan Anda benar, Anda berbagi hadiah pool dengan semua orang lain di sisi Anda.",
+    overview_callout_body: "Menurut Anda harga CHZ 5 menit lagi akan lebih tinggi dari sekarang? Taruhan UP. Akan lebih rendah? Taruhan DOWN. Jika tebakan Anda benar, Anda berbagi hadiah pool dengan semua orang lain di sisi Anda.",
 
     how_title: "Ringkasan: Cara Kerja",
     how_subtitle: "Ringkasan langkah demi langkah alur prediksi.",
     how_step1: "UP &amp; DOWN hanya mendukung pasangan <strong>CHZ/USD</strong>.",
-    how_step2: "Prediksi apakah harga CHZ akan lebih tinggi (<strong>UP</strong>) atau lebih rendah (<strong>DOWN</strong>) dari Locked Price saat ronde 10 menit berakhir.",
+    how_step2: "Prediksi apakah harga CHZ akan lebih tinggi (<strong>UP</strong>) atau lebih rendah (<strong>DOWN</strong>) dari Locked Price saat ronde 5 menit berakhir.",
     how_step3: "Masukkan jumlah CHZ yang Anda inginkan.",
     how_step4: "Setelah entri Anda dikirim untuk ronde \"LIVE\", entri <strong>tidak dapat diubah, dibatalkan, atau dihapus</strong>.",
     how_step5_intro: "Menang atau kalah:",
@@ -773,17 +773,17 @@ const translations = {
     how_step5_down: "<strong>DOWN Menang:</strong> Jika Closed Price &lt; Locked Price di akhir ronde.",
 
     how_q1_title: "Apa itu Locked Price?",
-    how_q1_body: "Locked Price adalah harga CHZ/USD yang dicatat tepat pada saat sebuah ronde dimulai. Ini adalah titik acuan untuk mengukur prediksi Anda; anggap saja sebagai \"garis start\". Apa pun yang Anda prediksi (UP atau DOWN), Anda memprediksi di mana posisi CHZ relatif terhadap angka ini 10 menit kemudian.",
+    how_q1_body: "Locked Price adalah harga CHZ/USD yang dicatat tepat pada saat sebuah ronde dimulai. Ini adalah titik acuan untuk mengukur prediksi Anda; anggap saja sebagai \"garis start\". Apa pun yang Anda prediksi (UP atau DOWN), Anda memprediksi di mana posisi CHZ relatif terhadap angka ini 5 menit kemudian.",
     how_q1_ex_label: "Contoh.",
     how_q1_ex_body: " Ronde baru dibuka pukul 14:00. Pada saat itu, CHZ/USD adalah $0.0820. Itu menjadi Locked Price untuk ronde ini. Sepuluh menit kemudian, jika CHZ di atas $0.0820 → UP menang. Di bawah $0.0820 → DOWN menang.",
 
     how_q2_title: "Apa itu Closed Price?",
-    how_q2_body: "Closed Price adalah harga CHZ/USD yang dicatat tepat pada saat ronde berakhir, 10 menit setelah Locked Price ditetapkan. Inilah angka yang menentukan pemenang.",
+    how_q2_body: "Closed Price adalah harga CHZ/USD yang dicatat tepat pada saat ronde berakhir, 5 menit setelah Locked Price ditetapkan. Inilah angka yang menentukan pemenang.",
     how_q2_ex_label: "Contoh.",
-    how_q2_ex_body: " Melanjutkan dari atas: ronde dimulai pukul 14:00 dengan Locked Price $0.0820. Pukul 14:10, CHZ/USD adalah $0.0834. Closed Price ($0.0834) lebih tinggi dari Locked Price ($0.0820), jadi UP menang ronde ini.",
+    how_q2_ex_body: " Melanjutkan dari atas: ronde dimulai pukul 14:00 dengan Locked Price $0.0820. Pukul 14:05, CHZ/USD adalah $0.0834. Closed Price ($0.0834) lebih tinggi dari Locked Price ($0.0820), jadi UP menang ronde ini.",
 
     how_q3_title: "Apa itu \"Ronde\"?",
-    how_q3_body: "Ronde adalah satu siklus prediksi penuh selama 10 menit. Setiap ronde memiliki tiga fase:",
+    how_q3_body: "Ronde adalah satu siklus prediksi penuh selama 5 menit. Setiap ronde memiliki tiga fase:",
     how_q3_p1: "<strong>Open (Bertaruh):</strong> Pemain memilih UP atau DOWN dan mengirimkan entri mereka.",
     how_q3_p2: "<strong>Live (Terkunci):</strong> Entri dikunci, Locked Price ditetapkan, dan harga bergerak bebas di pasar.",
     how_q3_p3: "<strong>Close (Penyelesaian):</strong> Closed Price dicatat, sisi pemenang ditentukan, dan hadiah dapat diklaim.",
@@ -812,7 +812,7 @@ const translations = {
     mech_title: "Mekanisme &amp; Biaya",
     mech_subtitle: "Detail teknis tentang ronde, biaya, dan perhitungan pembayaran.",
     mech_chain: "<strong>Blockchain:</strong> Didukung oleh Chiliz Chain (Mainnet).",
-    mech_round: "<strong>Frekuensi Ronde:</strong> Ronde bergulir terjadi setiap 10 menit.",
+    mech_round: "<strong>Frekuensi Ronde:</strong> Ronde bergulir terjadi setiap 5 menit.",
     mech_minentry: "<strong>Entri Minimum:</strong> 30 CHZ per ronde (tanpa batas maksimum).",
     mech_fee: "<strong>Biaya Platform:</strong> Sebagian kecil dari total hadiah pool dialokasikan ke $FAN. Dana ini didedikasikan untuk pengembangan platform berkelanjutan dan juga tunduk pada buyback dan burn.",
     mech_claim: "<strong>Kemenangan:</strong> Pengguna dapat mengklaim hadiah mereka segera setelah ronde diselesaikan dan data on-chain diverifikasi.",
@@ -825,8 +825,8 @@ const translations = {
     mech_q1_ex_body: " Sebuah ronde berakhir dengan pool UP 1.000 CHZ dan pool DOWN 2.000 CHZ, gabungan 3.000 CHZ. Anda bertaruh 30 CHZ pada UP. Rasio Pembayaran (UP) = 3.000 ÷ 1.000 = 3x. UP menang → hadiah kotor Anda = 30 × 3 = 90 CHZ, dikurangi biaya platform kecil. Karena UP adalah sisi yang lebih kecil, setiap pemenang UP mendapat pengali lebih besar. <strong>Sisi lebih kecil = hadiah lebih besar per CHZ.</strong>",
     mech_q2_title: "Apa arti \"buyback dan burn\"?",
     mech_q2_body: "Sebagian dari biaya platform digunakan untuk <strong>membeli token $FAN di pasar terbuka</strong> lalu menghancurkannya secara permanen (\"burn\"). Pembakaran mengurangi total pasokan $FAN seiring waktu, yang dapat mendukung nilainya dalam jangka panjang. Singkatnya: setiap ronde yang Anda mainkan menyumbang sedikit untuk membuat $FAN lebih langka.",
-    mech_q3_title: "Apa arti \"ronde bergulir setiap 10 menit\"?",
-    mech_q3_body: "Ronde baru dibuka setiap 10 menit, seperti jam. Anda tidak perlu menunggu satu ronde selesai sepenuhnya sebelum bergabung dengan yang berikutnya; ronde tumpang tindih, jadi selalu ada yang menerima entri. Jika Anda tidak yakin dengan ronde saat ini, Anda bisa melewatinya dan kesempatan berikutnya hanya beberapa menit lagi.",
+    mech_q3_title: "Apa arti \"ronde bergulir setiap 5 menit\"?",
+    mech_q3_body: "Ronde baru dibuka setiap 5 menit, seperti jam. Anda tidak perlu menunggu satu ronde selesai sepenuhnya sebelum bergabung dengan yang berikutnya; ronde tumpang tindih, jadi selalu ada yang menerima entri. Jika Anda tidak yakin dengan ronde saat ini, Anda bisa melewatinya dan kesempatan berikutnya hanya beberapa menit lagi.",
 
     out_title: "Hasil &amp; Aturan Khusus",
     out_subtitle: "Apa yang terjadi setelah ronde berakhir.",
@@ -888,12 +888,12 @@ const translations = {
     overview_subtitle: "Trendi tahmin edin, bahsinizi artırın ve kazanın.",
     overview_p1: "UP &amp; DOWN, Chiliz Chain üzerine kurulu merkeziyetsiz, yüksek hassasiyetli bir tahmin platformudur. CHZ'nin fiyat hareketlerinden gerçek zamanlı olarak yararlanmanızı sağlar.",
     overview_callout_title: "Tek cümlede:",
-    overview_callout_body: "CHZ fiyatının 10 dakika sonra şu ankinden daha yüksek olacağını mı düşünüyorsunuz? UP'a bahis yapın. Daha düşük olacağını mı? DOWN'a bahis yapın. Tahmininiz doğruysa, ödül havuzunu sizinle aynı tarafta olan herkesle paylaşırsınız.",
+    overview_callout_body: "CHZ fiyatının 5 dakika sonra şu ankinden daha yüksek olacağını mı düşünüyorsunuz? UP'a bahis yapın. Daha düşük olacağını mı? DOWN'a bahis yapın. Tahmininiz doğruysa, ödül havuzunu sizinle aynı tarafta olan herkesle paylaşırsınız.",
 
     how_title: "Özet: Nasıl Çalışır",
     how_subtitle: "Tahmin akışının adım adım özeti.",
     how_step1: "UP &amp; DOWN yalnızca <strong>CHZ/USD</strong> paritesini destekler.",
-    how_step2: "10 dakikalık tur sona erdiğinde CHZ fiyatının Locked Price'tan daha yüksek (<strong>UP</strong>) mı yoksa daha düşük (<strong>DOWN</strong>) mü olacağını tahmin edin.",
+    how_step2: "5 dakikalık tur sona erdiğinde CHZ fiyatının Locked Price'tan daha yüksek (<strong>UP</strong>) mı yoksa daha düşük (<strong>DOWN</strong>) mü olacağını tahmin edin.",
     how_step3: "İstediğiniz CHZ miktarını girin.",
     how_step4: "Girişiniz bir \"LIVE\" tur için gönderildikten sonra <strong>düzenlenemez, iptal edilemez veya kaldırılamaz</strong>.",
     how_step5_intro: "Kazanç veya kayıp:",
@@ -901,17 +901,17 @@ const translations = {
     how_step5_down: "<strong>DOWN Kazanır:</strong> Tur sonunda Closed Price &lt; Locked Price ise.",
 
     how_q1_title: "Locked Price nedir?",
-    how_q1_body: "Locked Price, bir turun başladığı tam anda kaydedilen CHZ/USD fiyatıdır. Tahmininizin karşılaştırıldığı referans noktasıdır; bunu \"başlangıç çizgisi\" olarak düşünün. Ne tahmin ederseniz edin (UP veya DOWN), CHZ'nin 10 dakika sonra bu sayıya göre nerede olacağını tahmin ediyorsunuz.",
+    how_q1_body: "Locked Price, bir turun başladığı tam anda kaydedilen CHZ/USD fiyatıdır. Tahmininizin karşılaştırıldığı referans noktasıdır; bunu \"başlangıç çizgisi\" olarak düşünün. Ne tahmin ederseniz edin (UP veya DOWN), CHZ'nin 5 dakika sonra bu sayıya göre nerede olacağını tahmin ediyorsunuz.",
     how_q1_ex_label: "Örnek.",
     how_q1_ex_body: " Saat 14:00'te yeni bir tur açılır. Tam o anda CHZ/USD $0.0820'dir. Bu, bu turun Locked Price'ı olur. On dakika sonra, CHZ $0.0820'nin üzerindeyse → UP kazanır. Altındaysa → DOWN kazanır.",
 
     how_q2_title: "Closed Price nedir?",
-    how_q2_body: "Closed Price, turun bittiği tam anda, Locked Price belirlendikten 10 dakika sonra kaydedilen CHZ/USD fiyatıdır. Kazananı belirleyen sayı budur.",
+    how_q2_body: "Closed Price, turun bittiği tam anda, Locked Price belirlendikten 5 dakika sonra kaydedilen CHZ/USD fiyatıdır. Kazananı belirleyen sayı budur.",
     how_q2_ex_label: "Örnek.",
-    how_q2_ex_body: " Yukarıdan devam: tur saat 14:00'te $0.0820 Locked Price ile başladı. Saat 14:10'da CHZ/USD $0.0834. Closed Price ($0.0834), Locked Price'tan ($0.0820) daha yüksek, bu yüzden bu turu UP kazanır.",
+    how_q2_ex_body: " Yukarıdan devam: tur saat 14:00'te $0.0820 Locked Price ile başladı. Saat 14:05'da CHZ/USD $0.0834. Closed Price ($0.0834), Locked Price'tan ($0.0820) daha yüksek, bu yüzden bu turu UP kazanır.",
 
     how_q3_title: "\"Tur\" nedir?",
-    how_q3_body: "Bir tur, tam 10 dakikalık bir tahmin döngüsüdür. Her turun üç aşaması vardır:",
+    how_q3_body: "Bir tur, tam 5 dakikalık bir tahmin döngüsüdür. Her turun üç aşaması vardır:",
     how_q3_p1: "<strong>Open (Bahis):</strong> Oyuncular UP veya DOWN seçer ve girişlerini gönderir.",
     how_q3_p2: "<strong>Live (Kilitli):</strong> Girişler kilitlenir, Locked Price belirlenir ve fiyat piyasada serbestçe hareket eder.",
     how_q3_p3: "<strong>Close (Sonuçlanma):</strong> Closed Price kaydedilir, kazanan taraf belirlenir ve ödüller talep edilebilir hale gelir.",
@@ -940,7 +940,7 @@ const translations = {
     mech_title: "Mekanikler ve Ücretler",
     mech_subtitle: "Turlar, ücretler ve ödeme hesaplamaları hakkında teknik ayrıntılar.",
     mech_chain: "<strong>Blokzincir:</strong> Chiliz Chain (Mainnet) tarafından desteklenir.",
-    mech_round: "<strong>Tur Sıklığı:</strong> Her 10 dakikada bir döngüsel turlar gerçekleşir.",
+    mech_round: "<strong>Tur Sıklığı:</strong> Her 5 dakikada bir döngüsel turlar gerçekleşir.",
     mech_minentry: "<strong>Minimum Giriş:</strong> Tur başına 30 CHZ (üst sınır yok).",
     mech_fee: "<strong>Platform Ücreti:</strong> Toplam ödül havuzunun küçük bir kısmı $FAN'a tahsis edilir. Bu fonlar sürekli platform geliştirmeye ayrılmıştır ve ayrıca geri alım ve yakma işlemine tabidir.",
     mech_claim: "<strong>Kazançlar:</strong> Kullanıcılar, tur sonuçlandıktan ve zincir üzerindeki veriler doğrulandıktan hemen sonra ödüllerini talep edebilir.",
@@ -953,8 +953,8 @@ const translations = {
     mech_q1_ex_body: " Bir tur, UP havuzu 1.000 CHZ ve DOWN havuzu 2.000 CHZ, toplamda 3.000 CHZ ile kapanır. UP'a 30 CHZ bahis yaptınız. Ödeme Oranı (UP) = 3.000 ÷ 1.000 = 3x. UP kazanır → brüt ödülünüz = 30 × 3 = 90 CHZ, eksi küçük bir platform ücreti. UP daha küçük taraf olduğu için, her UP kazananı daha büyük bir çarpan aldı. <strong>Daha küçük taraf = CHZ başına daha büyük ödül.</strong>",
     mech_q2_title: "\"Geri alım ve yakma\" ne demek?",
     mech_q2_body: "Platform ücretlerinin bir kısmı, <strong>açık piyasada $FAN token satın almak</strong> ve ardından bunları kalıcı olarak yok etmek (\"yakmak\") için kullanılır. Yakma, zamanla $FAN'ın toplam arzını azaltır ve bu da uzun vadeli değerini destekleyebilir. Kısacası: oynadığınız her tur, $FAN'ı daha kıt hale getirmeye küçük bir katkı sağlar.",
-    mech_q3_title: "\"Her 10 dakikada bir döngüsel turlar\" ne demek?",
-    mech_q3_body: "Saat gibi her 10 dakikada bir yeni tur açılır. Bir sonrakine katılmadan önce bir turun tamamen bitmesini beklemeniz gerekmez; turlar üst üste biner, bu yüzden her zaman giriş kabul eden bir tur vardır. Mevcut tur konusunda kendinize güvenmiyorsanız, atlayabilirsiniz ve bir sonraki fırsat sadece birkaç dakika uzaktadır.",
+    mech_q3_title: "\"Her 5 dakikada bir döngüsel turlar\" ne demek?",
+    mech_q3_body: "Saat gibi her 5 dakikada bir yeni tur açılır. Bir sonrakine katılmadan önce bir turun tamamen bitmesini beklemeniz gerekmez; turlar üst üste biner, bu yüzden her zaman giriş kabul eden bir tur vardır. Mevcut tur konusunda kendinize güvenmiyorsanız, atlayabilirsiniz ve bir sonraki fırsat sadece birkaç dakika uzaktadır.",
 
     out_title: "Sonuçlar ve Özel Kurallar",
     out_subtitle: "Bir tur kapandıktan sonra ne olur.",
@@ -1016,12 +1016,12 @@ const translations = {
     overview_subtitle: "Hulaan ang trend, itaas ang iyong taya, at manalo.",
     overview_p1: "Ang UP &amp; DOWN ay isang desentralisado, mataas na katumpakan na prediction platform na binuo sa Chiliz Chain. Pinapayagan ka nitong samantalahin ang mga paggalaw ng presyo ng CHZ nang real-time.",
     overview_callout_title: "Sa madaling salita:",
-    overview_callout_body: "Sa tingin mo ba ay mas mataas ang presyo ng CHZ sa loob ng 10 minuto kaysa ngayon? Tumaya ng UP. Sa tingin mo mas mababa? Tumaya ng DOWN. Kung tama ka, hahatiin mo ang prize pool kasama ang lahat ng nasa panig mo.",
+    overview_callout_body: "Sa tingin mo ba ay mas mataas ang presyo ng CHZ sa loob ng 5 minuto kaysa ngayon? Tumaya ng UP. Sa tingin mo mas mababa? Tumaya ng DOWN. Kung tama ka, hahatiin mo ang prize pool kasama ang lahat ng nasa panig mo.",
 
     how_title: "Buod: Paano Ito Gumagana",
     how_subtitle: "Hakbang-hakbang na buod ng daloy ng prediksyon.",
     how_step1: "Ang UP &amp; DOWN ay eksklusibong sumusuporta sa pares na <strong>CHZ/USD</strong>.",
-    how_step2: "Hulaan kung ang presyo ng CHZ ay magiging mas mataas (<strong>UP</strong>) o mas mababa (<strong>DOWN</strong>) kaysa sa Locked Price kapag natapos ang 10-minutong round.",
+    how_step2: "Hulaan kung ang presyo ng CHZ ay magiging mas mataas (<strong>UP</strong>) o mas mababa (<strong>DOWN</strong>) kaysa sa Locked Price kapag natapos ang 5-minutong round.",
     how_step3: "Ilagay ang nais mong halaga ng CHZ.",
     how_step4: "Kapag naisumite na ang iyong entry para sa isang \"LIVE\" round, hindi na ito <strong>maaaring i-edit, kanselahin, o tanggalin</strong>.",
     how_step5_intro: "Panalo o talo:",
@@ -1029,17 +1029,17 @@ const translations = {
     how_step5_down: "<strong>Nanalo ang DOWN:</strong> Kung Closed Price &lt; Locked Price sa katapusan ng round.",
 
     how_q1_title: "Ano ang Locked Price?",
-    how_q1_body: "Ang Locked Price ay ang presyo ng CHZ/USD na nakuha sa eksaktong sandali ng pagsisimula ng isang round. Ito ang reference point na pinagbabatayan ng iyong prediksyon; isipin mo itong \"starting line\". Anuman ang iyong hulaan (UP o DOWN), hinuhulaan mo kung nasaan ang CHZ kaugnay ng numerong ito makalipas ang 10 minuto.",
+    how_q1_body: "Ang Locked Price ay ang presyo ng CHZ/USD na nakuha sa eksaktong sandali ng pagsisimula ng isang round. Ito ang reference point na pinagbabatayan ng iyong prediksyon; isipin mo itong \"starting line\". Anuman ang iyong hulaan (UP o DOWN), hinuhulaan mo kung nasaan ang CHZ kaugnay ng numerong ito makalipas ang 5 minuto.",
     how_q1_ex_label: "Halimbawa.",
     how_q1_ex_body: " May bagong round na bumubukas nang 14:00. Sa eksaktong sandaling iyon, ang CHZ/USD ay $0.0820. Iyon ang nagiging Locked Price para sa round na ito. Makalipas ang sampung minuto, kung ang CHZ ay mas mataas sa $0.0820 → nanalo ang UP. Mas mababa sa $0.0820 → nanalo ang DOWN.",
 
     how_q2_title: "Ano ang Closed Price?",
-    how_q2_body: "Ang Closed Price ay ang presyo ng CHZ/USD na nakuha sa eksaktong sandali ng pagtatapos ng round, 10 minuto pagkatapos maitakda ang Locked Price. Ito ang numerong magpapasya kung sino ang mananalo.",
+    how_q2_body: "Ang Closed Price ay ang presyo ng CHZ/USD na nakuha sa eksaktong sandali ng pagtatapos ng round, 5 minuto pagkatapos maitakda ang Locked Price. Ito ang numerong magpapasya kung sino ang mananalo.",
     how_q2_ex_label: "Halimbawa.",
-    how_q2_ex_body: " Pagpapatuloy mula sa itaas: nagsimula ang round nang 14:00 na may Locked Price na $0.0820. Sa 14:10, ang CHZ/USD ay $0.0834. Ang Closed Price ($0.0834) ay mas mataas kaysa sa Locked Price ($0.0820), kaya nanalo ang UP sa round na ito.",
+    how_q2_ex_body: " Pagpapatuloy mula sa itaas: nagsimula ang round nang 14:00 na may Locked Price na $0.0820. Sa 14:05, ang CHZ/USD ay $0.0834. Ang Closed Price ($0.0834) ay mas mataas kaysa sa Locked Price ($0.0820), kaya nanalo ang UP sa round na ito.",
 
     how_q3_title: "Ano ang isang \"Round\"?",
-    how_q3_body: "Ang isang round ay isang buong 10-minutong siklo ng prediksyon. Ang bawat round ay may tatlong yugto:",
+    how_q3_body: "Ang isang round ay isang buong 5-minutong siklo ng prediksyon. Ang bawat round ay may tatlong yugto:",
     how_q3_p1: "<strong>Open (Pagtaya):</strong> Pumipili ang mga manlalaro ng UP o DOWN at isinusumite ang kanilang mga entry.",
     how_q3_p2: "<strong>Live (Naka-lock):</strong> Naka-lock na ang mga entry, naitakda na ang Locked Price, at malayang gumagalaw ang presyo sa merkado.",
     how_q3_p3: "<strong>Close (Pag-settle):</strong> Naitala na ang Closed Price, napagpasyahan na ang panig na nanalo, at maaari nang i-claim ang mga gantimpala.",
@@ -1068,7 +1068,7 @@ const translations = {
     mech_title: "Mekanika at Bayarin",
     mech_subtitle: "Mga teknikal na detalye tungkol sa mga round, bayarin, at pagkalkula ng bayad.",
     mech_chain: "<strong>Blockchain:</strong> Pinapagana ng Chiliz Chain (Mainnet).",
-    mech_round: "<strong>Dalas ng Round:</strong> Nagaganap ang rolling rounds bawat 10 minuto.",
+    mech_round: "<strong>Dalas ng Round:</strong> Nagaganap ang rolling rounds bawat 5 minuto.",
     mech_minentry: "<strong>Minimum na Entry:</strong> 30 CHZ bawat round (walang pinakamataas na limitasyon).",
     mech_fee: "<strong>Bayad sa Platform:</strong> Isang maliit na bahagi ng kabuuang prize pool ang inilalaan sa $FAN. Ang mga pondong ito ay nakatuon sa patuloy na pagpapaunlad ng platform at napapailalim din sa buyback at burn.",
     mech_claim: "<strong>Mga Panalo:</strong> Maaaring i-claim ng mga user ang kanilang gantimpala kaagad pagkatapos ma-finalize ang round at ma-verify ang on-chain data.",
@@ -1081,8 +1081,8 @@ const translations = {
     mech_q1_ex_body: " Nagtapos ang isang round na may UP pool na 1,000 CHZ at DOWN pool na 2,000 CHZ, pinagsamang 3,000 CHZ. Tumaya ka ng 30 CHZ sa UP. Payout Ratio (UP) = 3,000 ÷ 1,000 = 3x. Nanalo ang UP → ang iyong gross na gantimpala = 30 × 3 = 90 CHZ, bawas ang maliit na bayad sa platform. Dahil ang UP ang mas maliit na panig, mas malaking multiplier ang nakuha ng bawat panalo sa UP. <strong>Mas maliit na panig = mas malaking gantimpala bawat CHZ.</strong>",
     mech_q2_title: "Ano ang ibig sabihin ng \"buyback at burn\"?",
     mech_q2_body: "Isang bahagi ng mga bayad sa platform ang ginagamit upang <strong>bumili ng $FAN token sa bukas na merkado</strong> at pagkatapos ay permanenteng sirain (\"burn\") ang mga ito. Binabawasan ng pagsunog ang kabuuang supply ng $FAN sa paglipas ng panahon, na maaaring sumuporta sa pangmatagalang halaga nito. Sa madaling salita: ang bawat round na nilalaro mo ay nag-aambag nang kaunti upang gawing mas bihira ang $FAN.",
-    mech_q3_title: "Ano ang ibig sabihin ng \"rolling rounds bawat 10 minuto\"?",
-    mech_q3_body: "May bagong round na bumubukas bawat 10 minuto, tulad ng orasan. Hindi mo kailangang maghintay na ganap na matapos ang isang round bago sumali sa susunod; nagsasapawan ang mga round, kaya laging may tumatanggap ng entry. Kung hindi ka sigurado sa kasalukuyang round, maaari mo itong laktawan at ang susunod na pagkakataon ay ilang minuto na lang ang layo.",
+    mech_q3_title: "Ano ang ibig sabihin ng \"rolling rounds bawat 5 minuto\"?",
+    mech_q3_body: "May bagong round na bumubukas bawat 5 minuto, tulad ng orasan. Hindi mo kailangang maghintay na ganap na matapos ang isang round bago sumali sa susunod; nagsasapawan ang mga round, kaya laging may tumatanggap ng entry. Kung hindi ka sigurado sa kasalukuyang round, maaari mo itong laktawan at ang susunod na pagkakataon ay ilang minuto na lang ang layo.",
 
     out_title: "Mga Resulta at Espesyal na Panuntunan",
     out_subtitle: "Kung ano ang nangyayari pagkatapos magsara ang isang round.",
@@ -1144,12 +1144,12 @@ const translations = {
     overview_subtitle: "Preveja a tendência, aumente suas apostas e ganhe.",
     overview_p1: "UP &amp; DOWN é uma plataforma de previsão descentralizada e de alta fidelidade construída na Chiliz Chain. Ela permite que você aproveite os movimentos de preço do CHZ em tempo real.",
     overview_callout_title: "Em uma frase:",
-    overview_callout_body: "Acha que o preço do CHZ estará mais alto em 10 minutos do que agora? Aposte UP. Acha que estará mais baixo? Aposte DOWN. Se você acertar, divide o prêmio com todos os outros do lado vencedor.",
+    overview_callout_body: "Acha que o preço do CHZ estará mais alto em 5 minutos do que agora? Aposte UP. Acha que estará mais baixo? Aposte DOWN. Se você acertar, divide o prêmio com todos os outros do lado vencedor.",
 
     how_title: "Resumo: Como Funciona",
     how_subtitle: "Um resumo passo a passo do fluxo de previsão.",
     how_step1: "O UP &amp; DOWN suporta exclusivamente o par <strong>CHZ/USD</strong>.",
-    how_step2: "Preveja se o preço do CHZ estará mais alto (<strong>UP</strong>) ou mais baixo (<strong>DOWN</strong>) que o Locked Price quando a rodada de 10 minutos terminar.",
+    how_step2: "Preveja se o preço do CHZ estará mais alto (<strong>UP</strong>) ou mais baixo (<strong>DOWN</strong>) que o Locked Price quando a rodada de 5 minutos terminar.",
     how_step3: "Insira a quantidade de CHZ desejada.",
     how_step4: "Depois que sua entrada é enviada para uma rodada \"LIVE\", ela <strong>não pode ser editada, cancelada ou removida</strong>.",
     how_step5_intro: "Ganhar ou perder:",
@@ -1157,17 +1157,17 @@ const translations = {
     how_step5_down: "<strong>DOWN Vence:</strong> Se o Closed Price &lt; Locked Price no fim da rodada.",
 
     how_q1_title: "O que é o Locked Price?",
-    how_q1_body: "O Locked Price é o preço CHZ/USD capturado no exato momento em que uma rodada começa. É o ponto de referência com o qual sua previsão é comparada; pense nele como a \"linha de partida\". O que quer que você preveja (UP ou DOWN), você está prevendo onde o CHZ estará em relação a esse número 10 minutos depois.",
+    how_q1_body: "O Locked Price é o preço CHZ/USD capturado no exato momento em que uma rodada começa. É o ponto de referência com o qual sua previsão é comparada; pense nele como a \"linha de partida\". O que quer que você preveja (UP ou DOWN), você está prevendo onde o CHZ estará em relação a esse número 5 minutos depois.",
     how_q1_ex_label: "Exemplo.",
     how_q1_ex_body: " Uma nova rodada abre às 14:00. Nesse exato momento, o CHZ/USD está em $0.0820. Esse passa a ser o Locked Price desta rodada. Dez minutos depois, se o CHZ estiver acima de $0.0820 → UP vence. Abaixo de $0.0820 → DOWN vence.",
 
     how_q2_title: "O que é o Closed Price?",
-    how_q2_body: "O Closed Price é o preço CHZ/USD capturado no exato momento em que a rodada termina, 10 minutos depois de o Locked Price ter sido definido. É o número que decide quem vence.",
+    how_q2_body: "O Closed Price é o preço CHZ/USD capturado no exato momento em que a rodada termina, 5 minutos depois de o Locked Price ter sido definido. É o número que decide quem vence.",
     how_q2_ex_label: "Exemplo.",
-    how_q2_ex_body: " Continuando do anterior: a rodada começou às 14:00 com um Locked Price de $0.0820. Às 14:10, o CHZ/USD está em $0.0834. O Closed Price ($0.0834) é maior que o Locked Price ($0.0820), então UP vence esta rodada.",
+    how_q2_ex_body: " Continuando do anterior: a rodada começou às 14:00 com um Locked Price de $0.0820. Às 14:05, o CHZ/USD está em $0.0834. O Closed Price ($0.0834) é maior que o Locked Price ($0.0820), então UP vence esta rodada.",
 
     how_q3_title: "O que é uma \"Rodada\"?",
-    how_q3_body: "Uma rodada é um ciclo completo de previsão de 10 minutos. Cada rodada tem três fases:",
+    how_q3_body: "Uma rodada é um ciclo completo de previsão de 5 minutos. Cada rodada tem três fases:",
     how_q3_p1: "<strong>Open (Apostas):</strong> Os jogadores escolhem UP ou DOWN e enviam suas entradas.",
     how_q3_p2: "<strong>Live (Bloqueada):</strong> As entradas são bloqueadas, o Locked Price é definido e o preço se move livremente no mercado.",
     how_q3_p3: "<strong>Close (Liquidação):</strong> O Closed Price é registrado, o lado vencedor é decidido e as recompensas ficam disponíveis para resgate.",
@@ -1196,7 +1196,7 @@ const translations = {
     mech_title: "Mecânica e Taxas",
     mech_subtitle: "Detalhes técnicos sobre rodadas, taxas e cálculo de pagamentos.",
     mech_chain: "<strong>Blockchain:</strong> Desenvolvido na Chiliz Chain (Mainnet).",
-    mech_round: "<strong>Frequência das Rodadas:</strong> Rodadas contínuas ocorrem a cada 10 minutos.",
+    mech_round: "<strong>Frequência das Rodadas:</strong> Rodadas contínuas ocorrem a cada 5 minutos.",
     mech_minentry: "<strong>Entrada Mínima:</strong> 30 CHZ por rodada (sem limite máximo).",
     mech_fee: "<strong>Taxa da Plataforma:</strong> Uma pequena parte do prêmio total é alocada ao $FAN. Esses fundos são dedicados ao desenvolvimento contínuo da plataforma e também estão sujeitos a buyback e burn.",
     mech_claim: "<strong>Ganhos:</strong> Os usuários podem resgatar suas recompensas imediatamente após a rodada ser finalizada e os dados on-chain serem verificados.",
@@ -1209,8 +1209,8 @@ const translations = {
     mech_q1_ex_body: " Uma rodada fecha com o pool UP em 1.000 CHZ e o pool DOWN em 2.000 CHZ, combinados 3.000 CHZ. Você aposta 30 CHZ em UP. Proporção de Pagamento (UP) = 3.000 ÷ 1.000 = 3x. UP vence → sua recompensa bruta = 30 × 3 = 90 CHZ, menos uma pequena taxa da plataforma. Como UP era o lado menor, cada vencedor de UP recebeu um multiplicador maior. <strong>Lado menor = maior recompensa por CHZ.</strong>",
     mech_q2_title: "O que significa \"buyback e burn\"?",
     mech_q2_body: "Uma parte das taxas da plataforma é usada para <strong>comprar tokens $FAN no mercado aberto</strong> e depois destruí-los permanentemente (\"burn\"). A queima reduz o fornecimento total de $FAN ao longo do tempo, o que pode sustentar seu valor a longo prazo. Em resumo: cada rodada que você joga contribui um pouco para tornar o $FAN mais escasso.",
-    mech_q3_title: "O que significa \"rodadas contínuas a cada 10 minutos\"?",
-    mech_q3_body: "Uma nova rodada abre a cada 10 minutos, como um relógio. Você não precisa esperar uma rodada terminar completamente antes de entrar na próxima; as rodadas se sobrepõem, então sempre há uma aceitando entradas. Se você não se sentir confiante na rodada atual, pode pulá-la e a próxima oportunidade está a apenas alguns minutos de distância.",
+    mech_q3_title: "O que significa \"rodadas contínuas a cada 5 minutos\"?",
+    mech_q3_body: "Uma nova rodada abre a cada 5 minutos, como um relógio. Você não precisa esperar uma rodada terminar completamente antes de entrar na próxima; as rodadas se sobrepõem, então sempre há uma aceitando entradas. Se você não se sentir confiante na rodada atual, pode pulá-la e a próxima oportunidade está a apenas alguns minutos de distância.",
 
     out_title: "Resultados e Regras Especiais",
     out_subtitle: "O que acontece depois que uma rodada fecha.",
@@ -1272,12 +1272,12 @@ const translations = {
     overview_subtitle: "Predice la tendencia, sube tu apuesta y gana.",
     overview_p1: "UP &amp; DOWN es una plataforma de predicción descentralizada y de alta fidelidad construida en la Chiliz Chain. Te permite aprovechar los movimientos de precio de CHZ en tiempo real.",
     overview_callout_title: "En una frase:",
-    overview_callout_body: "¿Crees que el precio de CHZ estará más alto en 10 minutos que ahora? Apuesta UP. ¿Crees que estará más bajo? Apuesta DOWN. Si aciertas, compartes el bote con todos los demás de tu lado.",
+    overview_callout_body: "¿Crees que el precio de CHZ estará más alto en 5 minutos que ahora? Apuesta UP. ¿Crees que estará más bajo? Apuesta DOWN. Si aciertas, compartes el bote con todos los demás de tu lado.",
 
     how_title: "Resumen: Cómo Funciona",
     how_subtitle: "Un resumen paso a paso del flujo de predicción.",
     how_step1: "UP &amp; DOWN admite exclusivamente el par <strong>CHZ/USD</strong>.",
-    how_step2: "Predice si el precio de CHZ estará más alto (<strong>UP</strong>) o más bajo (<strong>DOWN</strong>) que el Locked Price cuando termine la ronda de 10 minutos.",
+    how_step2: "Predice si el precio de CHZ estará más alto (<strong>UP</strong>) o más bajo (<strong>DOWN</strong>) que el Locked Price cuando termine la ronda de 5 minutos.",
     how_step3: "Introduce la cantidad de CHZ que desees.",
     how_step4: "Una vez que tu entrada se envía para una ronda \"LIVE\", <strong>no se puede editar, cancelar ni eliminar</strong>.",
     how_step5_intro: "Ganar o perder:",
@@ -1285,17 +1285,17 @@ const translations = {
     how_step5_down: "<strong>DOWN Gana:</strong> Si el Closed Price &lt; Locked Price al final de la ronda.",
 
     how_q1_title: "¿Qué es el Locked Price?",
-    how_q1_body: "El Locked Price es el precio CHZ/USD capturado en el momento exacto en que comienza una ronda. Es el punto de referencia con el que se compara tu predicción; piénsalo como la \"línea de salida\". Sea lo que sea que predigas (UP o DOWN), estás prediciendo dónde estará CHZ en relación con este número 10 minutos después.",
+    how_q1_body: "El Locked Price es el precio CHZ/USD capturado en el momento exacto en que comienza una ronda. Es el punto de referencia con el que se compara tu predicción; piénsalo como la \"línea de salida\". Sea lo que sea que predigas (UP o DOWN), estás prediciendo dónde estará CHZ en relación con este número 5 minutos después.",
     how_q1_ex_label: "Ejemplo.",
     how_q1_ex_body: " Una nueva ronda abre a las 14:00. En ese momento exacto, CHZ/USD está en $0.0820. Ese pasa a ser el Locked Price de esta ronda. Diez minutos después, si CHZ está por encima de $0.0820 → gana UP. Por debajo de $0.0820 → gana DOWN.",
 
     how_q2_title: "¿Qué es el Closed Price?",
-    how_q2_body: "El Closed Price es el precio CHZ/USD capturado en el momento exacto en que termina la ronda, 10 minutos después de fijarse el Locked Price. Es el número que decide quién gana.",
+    how_q2_body: "El Closed Price es el precio CHZ/USD capturado en el momento exacto en que termina la ronda, 5 minutos después de fijarse el Locked Price. Es el número que decide quién gana.",
     how_q2_ex_label: "Ejemplo.",
-    how_q2_ex_body: " Continuando con lo anterior: la ronda comenzó a las 14:00 con un Locked Price de $0.0820. A las 14:10, CHZ/USD está en $0.0834. El Closed Price ($0.0834) es mayor que el Locked Price ($0.0820), así que UP gana esta ronda.",
+    how_q2_ex_body: " Continuando con lo anterior: la ronda comenzó a las 14:00 con un Locked Price de $0.0820. A las 14:05, CHZ/USD está en $0.0834. El Closed Price ($0.0834) es mayor que el Locked Price ($0.0820), así que UP gana esta ronda.",
 
     how_q3_title: "¿Qué es una \"Ronda\"?",
-    how_q3_body: "Una ronda es un ciclo completo de predicción de 10 minutos. Cada ronda tiene tres fases:",
+    how_q3_body: "Una ronda es un ciclo completo de predicción de 5 minutos. Cada ronda tiene tres fases:",
     how_q3_p1: "<strong>Open (Apuestas):</strong> Los jugadores eligen UP o DOWN y envían sus entradas.",
     how_q3_p2: "<strong>Live (Bloqueada):</strong> Las entradas se bloquean, se fija el Locked Price y el precio se mueve libremente en el mercado.",
     how_q3_p3: "<strong>Close (Liquidación):</strong> Se registra el Closed Price, se decide el lado ganador y las recompensas quedan disponibles para reclamar.",
@@ -1324,7 +1324,7 @@ const translations = {
     mech_title: "Mecánica y Comisiones",
     mech_subtitle: "Detalles técnicos sobre rondas, comisiones y cálculo de pagos.",
     mech_chain: "<strong>Blockchain:</strong> Funciona con Chiliz Chain (Mainnet).",
-    mech_round: "<strong>Frecuencia de Rondas:</strong> Las rondas continuas ocurren cada 10 minutos.",
+    mech_round: "<strong>Frecuencia de Rondas:</strong> Las rondas continuas ocurren cada 5 minutos.",
     mech_minentry: "<strong>Entrada Mínima:</strong> 30 CHZ por ronda (sin límite máximo).",
     mech_fee: "<strong>Comisión de la Plataforma:</strong> Una pequeña parte del bote total se asigna a $FAN. Estos fondos se destinan al desarrollo continuo de la plataforma y también están sujetos a buyback y burn.",
     mech_claim: "<strong>Ganancias:</strong> Los usuarios pueden reclamar sus recompensas inmediatamente después de que la ronda se finalice y se verifiquen los datos on-chain.",
@@ -1337,8 +1337,8 @@ const translations = {
     mech_q1_ex_body: " Una ronda cierra con el pool UP en 1.000 CHZ y el pool DOWN en 2.000 CHZ, combinados 3.000 CHZ. Apuestas 30 CHZ en UP. Proporción de Pago (UP) = 3.000 ÷ 1.000 = 3x. Gana UP → tu recompensa bruta = 30 × 3 = 90 CHZ, menos una pequeña comisión de la plataforma. Como UP era el lado más pequeño, cada ganador de UP obtuvo un multiplicador mayor. <strong>Lado más pequeño = mayor recompensa por CHZ.</strong>",
     mech_q2_title: "¿Qué significa \"buyback y burn\"?",
     mech_q2_body: "Una parte de las comisiones de la plataforma se usa para <strong>comprar tokens $FAN en el mercado abierto</strong> y luego destruirlos permanentemente (\"burn\"). La quema reduce el suministro total de $FAN con el tiempo, lo que puede respaldar su valor a largo plazo. En resumen: cada ronda que juegas contribuye un poco a hacer que $FAN sea más escaso.",
-    mech_q3_title: "¿Qué significa \"rondas continuas cada 10 minutos\"?",
-    mech_q3_body: "Una nueva ronda abre cada 10 minutos, como un reloj. No tienes que esperar a que una ronda termine por completo antes de unirte a la siguiente; las rondas se solapan, así que siempre hay una aceptando entradas. Si no te sientes seguro con la ronda actual, puedes saltártela y la siguiente oportunidad está a solo unos minutos.",
+    mech_q3_title: "¿Qué significa \"rondas continuas cada 5 minutos\"?",
+    mech_q3_body: "Una nueva ronda abre cada 5 minutos, como un reloj. No tienes que esperar a que una ronda termine por completo antes de unirte a la siguiente; las rondas se solapan, así que siempre hay una aceptando entradas. Si no te sientes seguro con la ronda actual, puedes saltártela y la siguiente oportunidad está a solo unos minutos.",
 
     out_title: "Resultados y Reglas Especiales",
     out_subtitle: "Qué ocurre después de que una ronda cierra.",
